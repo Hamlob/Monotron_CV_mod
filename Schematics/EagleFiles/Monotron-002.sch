@@ -16264,7 +16264,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R16" library="Mage-Control" deviceset="R-EU" device="R0603" value="47k"/>
 <part name="R17" library="Mage-Control" deviceset="R-EU" device="R0603" value="47k"/>
 <part name="R1" library="Mage-Control" deviceset="R-EU" device="R0603" value="47k"/>
-<part name="R2" library="Mage-Control" deviceset="R-EU" device="R0603" value="47k"/>
+<part name="R2" library="Mage-Control" deviceset="R-EU" device="R0603" value="10k"/>
 <part name="R4" library="Mage-Control" deviceset="R-EU" device="R0603" value="47k"/>
 <part name="R5" library="Mage-Control" deviceset="R-EU" device="R0603" value="33k"/>
 <part name="R18" library="Mage-Control" deviceset="R-EU" device="R0603" value="68k"/>
@@ -16398,8 +16398,6 @@ Interface</text>
 All capacitors should be rated atleast 5V
 unless stated otherwise</text>
 <text x="129.54" y="241.3" size="5.08" layer="136">Eurorack-monotron interface</text>
-<text x="170.18" y="124.46" size="1.778" layer="136">Vgs max &lt; 4V
-RdsON as low as possible</text>
 <text x="134.62" y="177.8" size="1.778" layer="136">Desired output: 0.44V/oct</text>
 <text x="144.78" y="228.6" size="1.778" layer="136">Desired output: 1.56V</text>
 <text x="205.74" y="175.26" size="1.778" layer="136">Desired output: 
@@ -16439,6 +16437,8 @@ min: 39.8*101%/(39.8*101% + 10*90% + 50.3*99%) = 0.406
 max: (39.8*99% + 10*90%)/(39.8*99% + 10*90% + 50.3*101%) = 0.488</text>
 <text x="30.48" y="30.48" size="1.778" layer="97">Do not place JACKS too close to each other,
 as the connectors are wider than the plugs and might not fit</text>
+<text x="165.1" y="127" size="1.778" layer="136">I(Q1) &lt; 0.2mA for maximum inputs</text>
+<text x="71.12" y="101.6" size="1.778" layer="136">~0.9V</text>
 </plain>
 <instances>
 <instance part="B2" gate="G$1" x="0" y="0" smashed="yes"/>
