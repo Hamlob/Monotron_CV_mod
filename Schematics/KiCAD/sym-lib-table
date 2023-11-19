@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "Monotron-002-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/Monotron-002-eagle-import.kicad_sym")(options "")(descr ""))
+)

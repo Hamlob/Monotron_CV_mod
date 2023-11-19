@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Monotron-002")(type "KiCad")(uri "$(KIPRJMOD)/Monotron-002.pretty")(options "")(descr ""))
+)
