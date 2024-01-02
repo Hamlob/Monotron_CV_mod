@@ -16287,7 +16287,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R8" library="bourns" deviceset="3362" device="R" value="10k trimmer"/>
 <part name="R12" library="bourns" deviceset="3362" device="R" value="10k trimmer"/>
 <part name="R20" library="bourns" deviceset="3362" device="R" value="500k trimmer"/>
-<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -16550,9 +16549,9 @@ as the connectors are wider than the plugs and might not fit</text>
 <attribute name="NAME" x="40.9956" y="49.3014" size="2.0828" layer="95" ratio="6" rot="SMR180"/>
 <attribute name="VALUE" x="40.3606" y="51.8414" size="2.0828" layer="96" ratio="6" rot="SMR180"/>
 </instance>
-<instance part="J3" gate="A" x="297.18" y="99.06" smashed="yes">
-<attribute name="NAME" x="272.1356" y="108.1786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="271.5006" y="105.6386" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<instance part="J3" gate="A" x="294.64" y="93.98" smashed="yes" rot="MR180">
+<attribute name="NAME" x="269.5956" y="84.8614" size="2.0828" layer="95" ratio="6" rot="SMR180"/>
+<attribute name="VALUE" x="268.9606" y="87.4014" size="2.0828" layer="96" ratio="6" rot="SMR180"/>
 </instance>
 <instance part="GND8" gate="1" x="60.96" y="162.56" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="63.5" y="160.02" size="1.778" layer="96" rot="MR0"/>
@@ -16600,9 +16599,6 @@ as the connectors are wider than the plugs and might not fit</text>
 <instance part="R20" gate="G$1" x="314.96" y="78.74" smashed="yes">
 <attribute name="NAME" x="307.975" y="75.946" size="1.524" layer="95" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="310.388" y="72.136" size="1.524" layer="96" ratio="10" rot="R90"/>
-</instance>
-<instance part="GND14" gate="1" x="314.96" y="68.58" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="317.5" y="66.04" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND15" gate="1" x="111.76" y="195.58" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="114.3" y="193.04" size="1.778" layer="96" rot="MR0"/>
@@ -16691,14 +16687,6 @@ as the connectors are wider than the plugs and might not fit</text>
 <wire x1="210.82" y1="134.62" x2="210.82" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="A" pin="2"/>
-<wire x1="294.64" y1="96.52" x2="294.64" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="J3" gate="A" pin="3"/>
-<wire x1="294.64" y1="93.98" x2="294.64" y2="86.36" width="0.1524" layer="91"/>
-<junction x="294.64" y="93.98"/>
-<pinref part="GND11" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND12" gate="1" pin="GND"/>
 <pinref part="J2" gate="A" pin="2"/>
 <wire x1="63.5" y1="48.26" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
@@ -16732,11 +16720,6 @@ as the connectors are wider than the plugs and might not fit</text>
 <junction x="304.8" y="193.04"/>
 </segment>
 <segment>
-<pinref part="GND14" gate="1" pin="GND"/>
-<pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="314.96" y1="71.12" x2="314.96" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND15" gate="1" pin="GND"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="198.12" x2="111.76" y2="200.66" width="0.1524" layer="91"/>
@@ -16755,6 +16738,16 @@ as the connectors are wider than the plugs and might not fit</text>
 <pinref part="GND18" gate="1" pin="GND"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
 <wire x1="177.8" y1="137.16" x2="177.8" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="294.64" y1="86.36" x2="294.64" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="J3" gate="A" pin="1"/>
+<wire x1="294.64" y1="93.98" x2="292.1" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="93.98" x2="294.64" y2="96.52" width="0.1524" layer="91"/>
+<junction x="294.64" y="93.98"/>
+<pinref part="J3" gate="A" pin="2"/>
+<wire x1="294.64" y1="96.52" x2="292.1" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -16805,13 +16798,6 @@ as the connectors are wider than the plugs and might not fit</text>
 <label x="223.52" y="165.1" size="1.778" layer="95"/>
 <pinref part="IC1" gate="B" pin="OUT"/>
 <wire x1="203.2" y1="165.1" x2="210.82" y2="165.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="J3" gate="A" pin="1"/>
-<pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="294.64" y1="99.06" x2="302.26" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -16999,6 +16985,13 @@ as the connectors are wider than the plugs and might not fit</text>
 <wire x1="185.42" y1="149.86" x2="185.42" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="B" pin="-IN"/>
 <wire x1="185.42" y1="162.56" x2="187.96" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="J3" gate="A" pin="3"/>
+<wire x1="302.26" y1="99.06" x2="292.1" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
